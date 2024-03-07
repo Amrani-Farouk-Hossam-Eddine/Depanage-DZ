@@ -6,20 +6,16 @@ import {
   SafeAreaView,
   Platform,
 } from "react-native";
-import Login from "./app/screens/Login";
-import Regester from "./app/screens/Register";
-import FirstPage from "./app/screens/FirstPage";
-import SecondePage from "./app/screens/SecondePage";
+
 import Navigation from "./app/routers/Navigation";
+import CoursesHistory from "./app/driver/screens/CoursesHistory";
+import Coursat from "./app/driver/screens/Coursat";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      {/* <SecondePage /> */}
       <Navigation />
-      {/* <FirstPage/> */}
-      {/* <Login/> */}
-      {/* <Regester/>  */}
+     
     </SafeAreaView>
   );
 }

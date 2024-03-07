@@ -9,7 +9,7 @@ function FirstPage({ navigation }) {
         <Image
           resizeMode="contain"
           style={styles.image}
-          source={require("../assets/Logo.png")}
+          source={require("../../assets/Logo.png")}
         />
       </View>
       <Text style={styles.order}>Order tow trauck</Text>

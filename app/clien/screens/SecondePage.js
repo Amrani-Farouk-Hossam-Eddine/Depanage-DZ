@@ -9,13 +9,16 @@ function SecondePage({ navigation }) {
         <Image
           resizeMode="contain"
           style={styles.image}
-          source={require("../assets/Logo.png")}
+          source={require("../../assets/Logo.png")}
         />
       </View>
       <Text style={styles.order}>do you want to register as:</Text>
       <View style={styles.buttons}>
         <TouchableOpacity
-          style={[{ backgroundColor: "#828282" }, styles.TouchableOpacity]}>
+          style={[{ backgroundColor: "#828282" }, styles.TouchableOpacity]}
+          onPress={() => {
+            navigation.navigate("LoginDriver");
+          }}>
           <Text style={styles.text}>Driver</Text>
         </TouchableOpacity>
         <TouchableOpacity
